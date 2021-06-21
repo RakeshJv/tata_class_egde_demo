@@ -60,7 +60,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       }
       setState(() {
 
-        if(!_controller.value.isPlaying && _controller.value.isInitialized) {
+        if(!_controller.value.isPlaying && _controller.value.isInitialized ) {
           videoManager.showNoteDialog(context);
           setState(() {
           });
@@ -69,6 +69,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
             (_controller.value.duration ==_controller.value.position)) {
           print(" video finish ");
           setState(() {
+            _controller.initialize();
             _openVideoPlayer( context);
           });
         }

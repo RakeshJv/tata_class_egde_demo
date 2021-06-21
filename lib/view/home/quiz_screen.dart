@@ -90,7 +90,7 @@ class _QuizScreenState extends State<QuizScreen> {
               SizedBox(height: COLORS.mainPadding * 3),
 
               Center(
-                child: Text("UI/UX\nCourses",
+                child: Text("QUIZ",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 34,
