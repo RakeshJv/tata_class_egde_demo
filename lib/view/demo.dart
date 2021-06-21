@@ -22,7 +22,9 @@ class Demo extends StatelessWidget {
               home: Home(),
 
                 routes: <String, WidgetBuilder> {
+                 // AppString.ROUTE_DIRECT_HOME_SCREEN : (context) => new Home(),
                   AppString.ROUTE_DIRECT_HOME_SCREEN : (context) => new Home(),
+
                   AppString.ROUTE_DIRECT_VIDEO_PLAYER_SCREEN : (context) => new VideoPlayerScreen(),
                   AppString.ROUTE_DIRECT_QUIZ_SCREEN: (context) => new QuizScreen(),
 
